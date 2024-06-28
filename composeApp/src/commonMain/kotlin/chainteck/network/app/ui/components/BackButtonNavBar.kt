@@ -18,8 +18,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import chainteck.network.app.utility.FromLocalDrawable
-import mediaplayer.composeapp.generated.resources.Res
-import mediaplayer.composeapp.generated.resources.ic_back_button
+import composemediaplayer.composeapp.generated.resources.Res
+import composemediaplayer.composeapp.generated.resources.ic_back_button
 import network.chaintech.sdpcomposemultiplatform.sdp
 
 @Composable

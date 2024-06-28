@@ -5,10 +5,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.font.toFontFamily
-import mediaplayer.composeapp.generated.resources.Res
-import mediaplayer.composeapp.generated.resources.lexenddeca_bold
-import mediaplayer.composeapp.generated.resources.lexenddeca_medium
-import mediaplayer.composeapp.generated.resources.lexenddeca_regular
+import composemediaplayer.composeapp.generated.resources.Res
+import composemediaplayer.composeapp.generated.resources.lexenddeca_bold
+import composemediaplayer.composeapp.generated.resources.lexenddeca_medium
+import composemediaplayer.composeapp.generated.resources.lexenddeca_regular
 import network.chaintech.sdpcomposemultiplatform.ssp
 import org.jetbrains.compose.resources.Font
 

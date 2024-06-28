@@ -1,5 +1,9 @@
-rootProject.name = "MediaPlayer"
+rootProject.name = "ComposeMediaPlayer"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+
 include(":composeApp")
+include(":mediaPlayer")
 
 pluginManagement {
     repositories {

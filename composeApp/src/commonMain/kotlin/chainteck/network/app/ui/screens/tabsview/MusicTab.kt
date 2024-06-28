@@ -11,9 +11,8 @@ import cafe.adriel.voyager.navigator.tab.TabOptions
 import chainteck.network.app.ui.screens.music.MusicContentView
 import chainteck.network.app.ui.screens.reels.ReelsContentView
 import chainteck.network.app.utility.BottomNavigationBarHeight
-import mediaplayer.composeapp.generated.resources.Res
-import mediaplayer.composeapp.generated.resources.ic_foryou_tab
-import mediaplayer.composeapp.generated.resources.ic_music_tab
+import composemediaplayer.composeapp.generated.resources.Res
+import composemediaplayer.composeapp.generated.resources.ic_music_tab
 import org.jetbrains.compose.resources.painterResource
 
 internal object MusicTab: Tab {

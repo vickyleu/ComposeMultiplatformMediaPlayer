@@ -49,10 +49,10 @@ import chainteck.network.app.ui.components.BackButtonNavBar
 import chainteck.network.app.utility.FromLocalDrawable
 import chainteck.network.app.utility.FromRemote
 import chainteck.network.app.utility.getSafeAreaSize
-import mediaplayer.composeapp.generated.resources.Res
-import mediaplayer.composeapp.generated.resources.icn_add
-import mediaplayer.composeapp.generated.resources.icn_download
-import mediaplayer.composeapp.generated.resources.icn_share
+import composemediaplayer.composeapp.generated.resources.Res
+import composemediaplayer.composeapp.generated.resources.icn_add
+import composemediaplayer.composeapp.generated.resources.icn_download
+import composemediaplayer.composeapp.generated.resources.icn_share
 import network.chaintech.sdpcomposemultiplatform.sdp
 import network.chaintech.sdpcomposemultiplatform.ssp
 import org.jetbrains.compose.resources.DrawableResource

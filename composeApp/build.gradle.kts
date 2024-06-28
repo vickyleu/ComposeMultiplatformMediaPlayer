@@ -15,8 +15,8 @@ kotlin {
         compilations.all {
             compileTaskProvider {
                 compilerOptions {
-                    jvmTarget.set(JvmTarget.JVM_1_8)
-                    freeCompilerArgs.add("-Xjdk-release=${JavaVersion.VERSION_1_8}")
+                    jvmTarget.set(JvmTarget.JVM_11)
+                    freeCompilerArgs.add("-Xjdk-release=${JavaVersion.VERSION_11}")
                 }
             }
         }
@@ -65,7 +65,10 @@ kotlin {
             implementation(libs.voyager.tab)
             /* ********************* */
 
-            implementation("network.chaintech:compose-multiplatform-media-player:1.0.11")
+            implementation(projects.mediaPlayer)
+//            implementation("network.chaintech:compose-multiplatform-media-player:1.0.11")
+
+            
             implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.1")
             api("io.github.qdsfdhvh:image-loader:1.8.1")
         }
@@ -100,6 +103,14 @@ android {
         manifest.srcFile("src/androidMain/AndroidManifest.xml")
         res.srcDirs("src/androidMain/res")
     }
+    packaging{
+        this.resources.pickFirsts.addAll(listOf(
+            "**/*.txt",
+            "**/NOTICE",
+            "**/LICENSE",
+        ))
+    }
+
     //https://developer.android.com/studio/test/gradle-managed-devices
     @Suppress("UnstableApiUsage")
     testOptions {
@@ -112,13 +123,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.11"
-    }
+
 }

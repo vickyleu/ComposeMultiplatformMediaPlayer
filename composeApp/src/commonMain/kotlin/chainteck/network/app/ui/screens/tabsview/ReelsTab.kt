@@ -10,8 +10,8 @@ import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabOptions
 import chainteck.network.app.ui.screens.reels.ReelsContentView
 import chainteck.network.app.utility.BottomNavigationBarHeight
-import mediaplayer.composeapp.generated.resources.Res
-import mediaplayer.composeapp.generated.resources.ic_foryou_tab
+import composemediaplayer.composeapp.generated.resources.Res
+import composemediaplayer.composeapp.generated.resources.ic_foryou_tab
 import org.jetbrains.compose.resources.painterResource
 
 internal object ReelsTab: Tab {
